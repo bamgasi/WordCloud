@@ -16,6 +16,9 @@ module.exports = {
             include: path.resolve(__dirname, './src'),
             loaders: 'babel-loader'
             
+        },{
+            test: /\.css$/,
+            loaders: 'style-loader!css-loader'
         }]
     },
     plugins: [
